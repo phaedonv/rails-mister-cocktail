@@ -2,8 +2,8 @@ class CreateDoses < ActiveRecord::Migration[6.0]
   def change
     create_table :doses do |t|
       t.string :description
-      t.references :cocktail, null: false, foreign_key: true
-      t.references :ingredients, null: false, foreign_key: true
+      t.integer :cocktail_id
+      t.integer :ingredient_id
 
       t.timestamps
     end
