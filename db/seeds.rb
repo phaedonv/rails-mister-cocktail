@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts "Destroying..."
+Cocktail.destroy_all if Rails.env.development?
+# ingredients ? doses?
+puts "creating.."
+cocktails = Cocktail.create([{ name: 'Big Bang' }, { name: 'Harakiri'}, { name: 'Herokuri' }])
+puts cocktails
