@@ -5,7 +5,8 @@ ruby '2.6.6'
 
 # Gemfile 4 Security
 gem 'dotenv-rails', groups: [:development, :test]
-
+# Cloudinaty Gem
+gem 'cloudinary', '~> 1.12.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3'
 # Use postgresql as the database for Active Record
